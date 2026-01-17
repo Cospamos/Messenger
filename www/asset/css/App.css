@@ -1,0 +1,30 @@
+:root {
+  --highlight-color: #333238;
+  --main-color: #16161b;
+  --select-color: green;
+  --main-text-color: #ededed;
+}
+
+html.light {
+  --highlight-color: #444450;
+  --main-color: #d9d9d9;
+  --select-color: green;
+  --main-text-color: #16161b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--main-text-color);
+  transition: background .5s, color .5s;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: var(--main-color);
+}

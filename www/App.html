@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/asset/css/App.css">
+  <link rel="stylesheet" href="/asset/css/main.css">
+</head>
+<body>
+  <main>
+    <div class="users_container">
+      <header>
+        <div class="head_user_info">
+          <div class="head_user_ico">
+            <p></p>
+            <img src="" alt="">
+          </div>
+          <div class="head_user_name"></div>
+        </div>
+        <button class="users_actions_btn"><i class="fa-solid fa-gear"></i></button>
+        <div class="user modal_container hidden">
+          <div class="actions_container">
+            <button class="show_qr">
+              <i class="fa-solid fa-qrcode"></i>
+              <p>Show QR</p>
+            </button>
+            <button class="user_settings_btn"><i class="fa-solid fa-sliders"></i>Settings</button>
+            <button class="ligh_mode"><i class="fa-regular fa-moon"></i>Night mode</button>
+          </div>
+        </div>
+      </header>
+      <div class="online_info"></div>
+    </div>
+    <div class="chat_container">
+      <header>
+        <div class="head_user_info">
+          <div class="head_user_ico">
+            <p></p>
+            <img src="" alt="">
+          </div>
+          <div class="head_user_name"></div>
+        </div>
+        <button class="users_actions_btn"><i class="fa-solid fa-gear"></i></button>
+        <div class="user modal_container hidden">
+          <div class="actions_container">
+            <button class="show_qr">
+              <i class="fa-solid fa-qrcode"></i>
+              <p>Show QR</p>
+            </button>
+            <button class="user_settings_btn"><i class="fa-solid fa-sliders"></i>Settings</button>
+            <button class="ligh_mode"><i class="fa-regular fa-moon"></i>Night mode</button>
+          </div>
+        </div>
+      </header>
+      <div class="content"></div>
+      <div class="input_container">
+        <div class="message_input" contenteditable="true" spellcheck="false" placeholder="Message"></div>
+        <button class="send_btn">
+          <p>Send</p>
+          <i class="fa-regular fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </main>
+  <div class="global user_container hidden">
+    <div class="qr_container hidden">
+      <img src="asset/img/qrcode.png">
+    </div>
+    <div class="user_settings_container hidden">
+      <div class="change_user_name">
+        <input type="text" placeholder="User name...">
+      </div>
+      <div class="change_user_ico">
+        <input type="text" placeholder="Ico url...">
+        <div class="overview">
+          <span><i class="fa-regular fa-image"></i></span>
+          <img src="" alt="" referrerpolicy="no-referrer">
+        </div>
+      </div>
+      <button class="save_users_data">Save</button>
+    </div>
+  </div>
+  <div class="sys_info_container">
+    <div class="sys_info_ico"><i class="fa-solid fa-circle-exclamation"></i></div>
+    <div class="sys_info_text_content">THE ERROR</div>
+  </div>
+  <script src="/asset/scripts/refs.js"></script>
+  <script src="/asset/scripts/utils.js"></script>
+  <script src="/asset/scripts/events.js"></script>
+  <script src="/asset/scripts/dom.js"></script>
+  <script src="/asset/scripts/client.js"></script>
+</body>
+</html>
